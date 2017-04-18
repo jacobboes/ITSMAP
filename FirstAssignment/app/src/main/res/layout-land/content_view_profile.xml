@@ -16,10 +16,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.07999998" />
+        app:srcCompat="@mipmap/ic_launcher"/>
 
     <TextView
         android:id="@+id/nameLabel"
@@ -36,10 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintTop_toBottomOf="@+id/nameLabel"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintLeft_toLeftOf="@+id/nameLabel" />
+        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
 
     <TextView
         android:id="@+id/idLabel"
@@ -47,10 +43,9 @@
         android:layout_height="wrap_content"
         android:text="@string/id"
         android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintTop_toBottomOf="@+id/name"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintLeft_toLeftOf="@+id/name" />
+        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
 
     <TextView
         android:id="@+id/id"
@@ -59,8 +54,7 @@
         android:textSize="@dimen/viewProfileTextSize"
         android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintTop_toBottomOf="@+id/idLabel"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintLeft_toLeftOf="@+id/idLabel" />
+        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
 
     <TextView
         android:id="@+id/androidStatusLabel"
@@ -70,16 +64,14 @@
         android:textSize="@dimen/viewProfileTextSize"
         android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintTop_toBottomOf="@+id/id"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintLeft_toLeftOf="@+id/id" />
+        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
 
     <TextView
         android:id="@+id/androidStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintTop_toBottomOf="@+id/androidStatusLabel"
-        app:layout_constraintLeft_toRightOf="@+id/androidStatusLabel"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintRight_toRightOf="@+id/profilePicture" />
 </android.support.constraint.ConstraintLayout>

@@ -3,4 +3,6 @@
     <string name="nameLabel">Name:</string>
     <string name="id">ID:</string>
     <string name="androidStatus">Android:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
