@@ -5,4 +5,6 @@
     <string name="androidStatus">Android:</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

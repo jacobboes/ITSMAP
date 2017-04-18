@@ -6,72 +6,94 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.smap.jacobboes.firstassignment.ViewProfileActivity"
-    tools:showIn="@layout/activity_view_profile">
+    tools:showIn="@layout/activity_view_profile"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <ImageView
         android:id="@+id/profilePicture"
-        android:layout_width="@dimen/profilePicSize"
-        android:layout_height="@dimen/profilePicSize"
-        android:layout_marginTop="@dimen/marginTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="32dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher"/>
+        android:layout_marginTop="32dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        android:layout_marginRight="8dp" />
 
     <TextView
         android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
         android:text="@string/nameLabel"
         android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="@dimen/marginTop"
-        app:layout_constraintTop_toBottomOf="@+id/profilePicture"
-        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/profilePicture" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/nameLabel"
-        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
-
-    <TextView
-        android:id="@+id/idLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/id"
-        android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="@dimen/marginTop"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
-
-    <TextView
-        android:id="@+id/id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="@dimen/marginTop"
-        app:layout_constraintTop_toBottomOf="@+id/idLabel"
-        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
-
-    <TextView
-        android:id="@+id/androidStatusLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/androidStatus"
-        android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="@dimen/marginTop"
-        app:layout_constraintTop_toBottomOf="@+id/id"
-        app:layout_constraintLeft_toLeftOf="@+id/profilePicture" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/nameLabel" />
 
     <TextView
         android:id="@+id/androidStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/viewProfileTextSize"
-        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/androidStatusLabel"
-        app:layout_constraintRight_toRightOf="@+id/profilePicture" />
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/androidStatusLabel" />
+
+    <TextView
+        android:id="@+id/androidStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/androidStatus"
+        android:textSize="@dimen/viewProfileTextSize"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/id"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:id="@+id/idLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/id"
+        android:textSize="@dimen/viewProfileTextSize"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/viewProfileTextSize"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/idLabel"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/idLabel" />
 </android.support.constraint.ConstraintLayout>

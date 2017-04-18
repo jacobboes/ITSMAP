@@ -3,4 +3,8 @@
     <string name="nameLabel">Navn:</string>
     <string name="id">ID:</string>
     <string name="androidStatus">Android:</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nej</string>
+    <string name="cancel">Annuller</string>
+    <string name="save">Gem</string>
 </resources>
